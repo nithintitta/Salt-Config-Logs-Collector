@@ -25,7 +25,7 @@ Local Minion grains and Master key lists.
 📂 Bundle Structure
 The generated archive mirrors the root filesystem to provide context to support teams:
 
-Plaintext
+```
 
 salt_diagnostic_[hostname]_[timestamp].tar.gz
 ├── etc/
@@ -43,6 +43,8 @@ salt_diagnostic_[hostname]_[timestamp].tar.gz
 └── systemd/
     ├── salt-master_status.txt
     └── raas_journal.log
+
+```
 🔒 Security & Privacy
 This script collects raw configuration and log files to provide accurate diagnostic context. Because these files may contain sensitive data, it is highly recommended to review the bundle before sharing it with third parties.
 
@@ -59,7 +61,9 @@ To redact sensitive strings (e.g., a database password) across all collected fil
 Bash
 
 # Replace "my-password" with "REDACTED" throughout the bundle
+```
 find /tmp/salt_diagnostic_bundle/ -type f -exec sed -i 's/my-password/REDACTED/g' {} +
+```
 🛠️ Usage
 Download the script: curl -O https://path-to-your-repo/salt_diag.sh
 
