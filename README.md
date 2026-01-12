@@ -63,8 +63,8 @@ Bash
 find /tmp/salt_diagnostic_bundle/ -type f -exec sed -i 's/my-password/REDACTED/g' {} +
 ```
 🛠️ Usage
-Download the script: curl -O https://path-to-your-repo/salt_diag.sh
-
+Download the script: curl -O https://github.com/nithintitta/Salt-Config-Logs-Collector/archive/refs/heads/main.zip
+Extract: 
 Make it executable: chmod +x salt_diag.sh
 
 Run as root: sudo ./salt_diag.sh
