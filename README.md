@@ -1,4 +1,4 @@
-SaltStack & RAAS Diagnostic Bundle Generator
+<h1>SaltStack & RAAS Diagnostic Bundle Generator </h1>
 This script is a comprehensive troubleshooting tool designed to collect logs, configurations, and system metadata from Salt Master, Salt Minion, and SaltStack Config (RAAS) nodes. It automatically detects installed components and generates a compressed .tar.gz bundle that mirrors the system's directory structure for easy analysis.
 
 🚀 Features
