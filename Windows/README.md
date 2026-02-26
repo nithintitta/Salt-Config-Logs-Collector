@@ -31,3 +31,23 @@ The script automatically locates your Salt installation (supporting both modern 
 3. Execute the script:
    ```powershell
    .\windows-minion-sos.ps1
+
+
+
+📦 Output
+Once finished, the script compresses the collected data into a single ZIP file located in your temporary directory. The console will output the exact path, which typically looks like this:
+
+Plaintext
+
+Bundle Ready: C:\Users\YourUser\AppData\Local\Temp\salt_diagnostic_WIN-SERVER1_20231027_143000.zip
+Inside the Bundle
+If you extract the ZIP file, the structure will look like this:
+
+
+
+📁 salt_diagnostic_HOSTNAME_TIMESTAMP/
+├── 📁 conf/                 # Copied Salt configuration files
+├── 📁 events/               # Application.evtx and System.evtx
+├── 📁 log/                  # Copied Salt log files
+├── 📁 reports/              # Metadata, versions, grains, ports, and systeminfo
+└── 📁 services/             # Service status and quick-glance text event logs
