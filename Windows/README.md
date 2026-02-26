@@ -44,10 +44,11 @@ Inside the Bundle
 If you extract the ZIP file, the structure will look like this:
 
 
-
+```
 📁 salt_diagnostic_HOSTNAME_TIMESTAMP/
 ├── 📁 conf/                 # Copied Salt configuration files
 ├── 📁 events/               # Application.evtx and System.evtx
 ├── 📁 log/                  # Copied Salt log files
 ├── 📁 reports/              # Metadata, versions, grains, ports, and systeminfo
 └── 📁 services/             # Service status and quick-glance text event logs
+```
